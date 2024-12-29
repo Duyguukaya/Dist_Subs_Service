@@ -87,7 +87,7 @@ Proje, farklı bileşenlerden oluşur:
 ruby admin.rb
 ```
 ### 4. **Plotter'ı Çalıştırma**
-Python ve matplotlib kütüphanesinin kullanılmıştır.Plotter aşağıdaki şekilde çalıştırılabilir:
+Python ve matplotlib kütüphanesi kullanılmıştır.Plotter aşağıdaki şekilde çalıştırılabilir:
 ```bash
 python plotter.py
 ```
