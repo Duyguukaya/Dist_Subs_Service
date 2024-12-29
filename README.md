@@ -100,7 +100,7 @@ Kullanım
 - Sunucular, kapasite durumu verilerini belirli aralıklarla admin client'a gönderir.
 - Plotter uygulaması, bu verileri dinler ve matplotlib kullanarak gerçek zamanlı bir grafik üzerinde gösterir.
 
-##Yapı
+## Yapı
 ```bash
 /dist_servers
     ├── dist_servers.proto         # Protobuf tanımları
