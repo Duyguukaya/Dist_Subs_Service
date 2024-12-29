@@ -2,13 +2,13 @@ require 'socket'
 require 'google/protobuf'
 require_relative 'dist_servers_pb'
 
-# dist_servers.proto'dan oluşturulan Protobuf modülü içe aktarılır.
+
 module DistServers
   include Google::Protobuf
 end
 
 class AdminClient
-  ADMIN_PORTS = [7001, 7002, 7003] # Admin istemci portları
+  ADMIN_PORTS = [7001, 7002, 7003] 
   SERVERS = []
 
   def initialize
@@ -63,12 +63,12 @@ class AdminClient
 
   def send_capacity_request
     capacity_request = DistServers::Capacity.new(
-      serverXStatus: 0, # İstek aşamasında server_status gerekmiyor
+      serverXStatus: 0,
       timestamp: Time.now.to_i
     )
 
     SERVERS.each_with_index do |socket, index|
-      capacity_request.serverXStatus = index + 1 # Her sunucu için server_id ayarlanır
+      capacity_request.serverXStatus = index + 1 
       socket.write(capacity_request.to_proto)
 
       response_data = socket.read(1024)
