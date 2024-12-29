@@ -11,6 +11,7 @@ public class Client2 {
     public static void main(String[] args) {
         try {
             // İkinci abone bilgileri
+            //
             Subscriber subscriber = Subscriber.newBuilder()
                     .setDemand(Subscriber.Demand.SUBS)
                     .setID(2)
