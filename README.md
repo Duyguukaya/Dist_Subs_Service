@@ -1,5 +1,4 @@
 # Dağıtık Abonelik Sistemi (Distributed Subscriber Service)
-# Distributed Server Monitoring and Plotting System
 
 ## Proje Hakkında
 
@@ -64,16 +63,17 @@ Proje, farklı bileşenlerden oluşur:
 
 ## Kurulum
 
-1. **Protobuf Derleme**:
-   Projeyi kullanabilmek için önce `.proto` dosyalarını derlemeniz gerekir. Aşağıdaki komutu kullanarak protobuf dosyalarını derleyebilirsiniz:
+### 1. **Protobuf Derleme**:
+   Projeyi kullanabilmek için önce `.proto` dosyalarının derlenmesi gerekir. Aşağıdaki komut kullanılarak protobuf dosyaları derlenebilir:
    
    ```bash
    protoc --python_out=. dist_servers.proto
    protoc --java_out=. dist_servers.proto
    protoc --ruby_out=. dist_servers.proto
+   ```
 
  ### 2. **Java Sunucularını Çalıştırma**
- Sunuculara başlamak için Server1.java, Server2.java, Server3.java dosyalarını derleyip çalıştırmanız gerekir:
+ Sunuculara başlamak için Server1.java, Server2.java, Server3.java dosyalarını derlenip çalıştırılması gerekir:
  
   ```bash
   javac Server1.java Server2.java Server3.java
@@ -81,17 +81,13 @@ Proje, farklı bileşenlerden oluşur:
   java Server2
   java Server3
 ```
- ### 2. **Admin Client'ı Çalıştırma**
- Admin client, Ruby dilinde yazıldığından önce Ruby'nin kurulu olması gerekir. Ruby'yi kurduktan sonra aşağıdaki komutla çalıştırabilirsiniz:
+ ### 3. **Admin Client'ı Çalıştırma**
+ Admin client, Ruby dilinde yazılmıştır. Ruby aşağıdaki komutla çalıştırılabiilir:
  ```bash
 ruby admin.rb
 ```
-### 2. **Plotter'ı Çalıştırma**
-Python ve matplotlib kütüphanesinin kurulu olması gerekir. Eğer matplotlib kurulu değilse, aşağıdaki komutu kullanarak yükleyebilirsiniz:
- ```bash
-pip install matplotlib
-```
-Ardından, plotter'ı çalıştırabilirsiniz:
+### 4. **Plotter'ı Çalıştırma**
+Python ve matplotlib kütüphanesinin kullanılmıştır.Plotter aşağıdaki şekilde çalıştırılabilir:
 ```bash
 python plotter.py
 ```
