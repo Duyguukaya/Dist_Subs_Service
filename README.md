@@ -72,6 +72,23 @@ Proje, farklı bileşenlerden oluşur:
    protoc --java_out=. dist_servers.proto
    protoc --ruby_out=. dist_servers.proto
 
+ ### 2. **Java Sunucularını Çalıştırma**
+ Sunuculara başlamak için Server1.java, Server2.java, Server3.java dosyalarını derleyip çalıştırmanız gerekir:
+ 
+  ```bash
+  javac Server1.java Server2.java Server3.java
+  java Server1
+  java Server2
+  java Server3
+```
+ ### 2. **Admin Client'ı Çalıştırma**
+ Admin client, Ruby dilinde yazıldığından önce Ruby'nin kurulu olması gerekir. Ruby'yi kurduktan sonra aşağıdaki komutla çalıştırabilirsiniz:
+ ```bash
+ruby admin.rb
+```
+
+
+
 
 ### plotter.py Solar System Exploration, 1950s – 1960s
 
