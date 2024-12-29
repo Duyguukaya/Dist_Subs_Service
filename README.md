@@ -86,6 +86,36 @@ Proje, farklı bileşenlerden oluşur:
  ```bash
 ruby admin.rb
 ```
+### 2. **Plotter'ı Çalıştırma**
+Python ve matplotlib kütüphanesinin kurulu olması gerekir. Eğer matplotlib kurulu değilse, aşağıdaki komutu kullanarak yükleyebilirsiniz:
+ ```bash
+pip install matplotlib
+```
+Ardından, plotter'ı çalıştırabilirsiniz:
+```bash
+python plotter.py
+```
+Kullanım
+- Admin Client çalıştırıldığında, sunuculardan kapasite verilerini talep eder.
+- Sunucular, kapasite durumu verilerini belirli aralıklarla admin client'a gönderir.
+- Plotter uygulaması, bu verileri dinler ve matplotlib kullanarak gerçek zamanlı bir grafik üzerinde gösterir.
+
+##Yapı
+```bash
+/dist_servers
+    ├── dist_servers.proto         # Protobuf tanımları
+    ├── dist_subs.conf             # Yapılandırma dosyası
+    ├── capacity.proto             # Kapasite verisi tanımları
+    ├── configuration.proto        # Sunucu komutları tanımları
+    ├── message.proto              # Mesaj formatları tanımları
+    ├── subscriber.proto           # Abone bilgileri
+    ├── Server1.java               # Sunucu 1
+    ├── Server2.java               # Sunucu 2
+    ├── Server3.java               # Sunucu 3
+    ├── admin.rb                   # Yönetici istemcisi
+    └── plotter.py                 # Kapasite verilerini görselleştiren Python scripti
+
+```
 
 
 
