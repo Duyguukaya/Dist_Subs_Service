@@ -91,7 +91,7 @@ Python ve matplotlib kütüphanesi kullanılmıştır.Plotter aşağıdaki şeki
 ```bash
 python plotter.py
 ```
-Kullanım
+## Kullanım
 - Admin Client çalıştırıldığında, sunuculardan kapasite verilerini talep eder.
 - Sunucular, kapasite durumu verilerini belirli aralıklarla admin client'a gönderir.
 - Plotter uygulaması, bu verileri dinler ve matplotlib kullanarak gerçek zamanlı bir grafik üzerinde gösterir.
@@ -112,7 +112,11 @@ Kullanım
     └── plotter.py                 # Kapasite verilerini görselleştiren Python scripti
 
 ```
-
+EKİP ÜYELERİ
+- Duygu KAYA
+- Şule ŞAHAN
+- Nagihan ZAN
+- Nuray NART
 
 
 
